@@ -9,8 +9,8 @@
 import UIKit
 
 class TableViewController: UIViewController {
+    
     @IBOutlet weak var tableView: UITableView!
-    let list = ["1","2","3","4","5"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,12 +27,13 @@ extension TableViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return list.count
+        return DataModel.shared.ArrayTasks.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "taskCell", for: indexPath) as! TaskTableViewCell
-        let item = "teste"
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TaskTableViewCell
+        let item = DataModel.shared.ArrayTasks[indexPath.row].taskName
         cell.bind(text: item)
         return cell
     }

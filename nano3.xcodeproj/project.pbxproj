@@ -65,18 +65,42 @@
 			isa = PBXGroup;
 			children = (
 				386B31AA202B31E900A02F5C /* AppDelegate.swift */,
-				386B31AC202B31E900A02F5C /* ViewController.swift */,
-				386B31AE202B31E900A02F5C /* Main.storyboard */,
 				386B31B1202B31E900A02F5C /* Assets.xcassets */,
-				386B31B3202B31E900A02F5C /* LaunchScreen.storyboard */,
 				386B31B6202B31E900A02F5C /* Info.plist */,
-				386B31BC202B56A200A02F5C /* TableViewController.swift */,
-				386B31BE202B574D00A02F5C /* TaskTableViewCell.swift */,
-				386B31C2202B84A500A02F5C /* DataModel.swift */,
-				386B31C4202B855F00A02F5C /* TaskRegister.swift */,
-				386B31C6202B87EB00A02F5C /* TaskCreateViewController.swift */,
+				389AA32F202C6C680061EE92 /* Model */,
+				389AA330202C6C700061EE92 /* View */,
+				389AA331202C6C750061EE92 /* Controller */,
 			);
 			path = nano3;
+			sourceTree = "<group>";
+		};
+		389AA32F202C6C680061EE92 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				386B31C2202B84A500A02F5C /* DataModel.swift */,
+				386B31C4202B855F00A02F5C /* TaskRegister.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		389AA330202C6C700061EE92 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				386B31AC202B31E900A02F5C /* ViewController.swift */,
+				386B31AE202B31E900A02F5C /* Main.storyboard */,
+				386B31B3202B31E900A02F5C /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		389AA331202C6C750061EE92 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				386B31BC202B56A200A02F5C /* TableViewController.swift */,
+				386B31BE202B574D00A02F5C /* TaskTableViewCell.swift */,
+				386B31C6202B87EB00A02F5C /* TaskCreateViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

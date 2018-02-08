@@ -8,18 +8,21 @@
 
 import Foundation
 
-enum TaskCategory {
-    case entertainement, study, future, random
+enum TaskCategory: Int {
+    case entertainement = 1, study, future, random
 }
 
 class TaskRegister {
     var taskName: String
     var taskDescription: String
     var taskCategory: TaskCategory
+    //    var taskDeadLine: Int
     
+    //    init(name: String, description: String, category: TaskCategory, deadLine: Int) {
     init(name: String, description: String, category: TaskCategory) {
         taskName = name
         taskDescription = description
         taskCategory = category
+        //        taskDeadLine = deadLine
     }
 }
