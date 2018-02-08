@@ -9,9 +9,14 @@
 /* Begin PBXBuildFile section */
 		386B31AB202B31E900A02F5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386B31AA202B31E900A02F5C /* AppDelegate.swift */; };
 		386B31AD202B31E900A02F5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386B31AC202B31E900A02F5C /* ViewController.swift */; };
-		386B31B0202B31E900A02F5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 386B31AE202B31E900A02F5C /* Main.storyboard */; };
+		386B31B0202B31E900A02F5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 386B31AE202B31E900A02F5C /* Main.storyboard */; settings = {ASSET_TAGS = (taskCell, ); }; };
 		386B31B2202B31E900A02F5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 386B31B1202B31E900A02F5C /* Assets.xcassets */; };
 		386B31B5202B31E900A02F5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 386B31B3202B31E900A02F5C /* LaunchScreen.storyboard */; };
+		386B31BD202B56A200A02F5C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386B31BC202B56A200A02F5C /* TableViewController.swift */; };
+		386B31BF202B574D00A02F5C /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386B31BE202B574D00A02F5C /* TaskTableViewCell.swift */; };
+		386B31C3202B84A500A02F5C /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386B31C2202B84A500A02F5C /* DataModel.swift */; };
+		386B31C5202B855F00A02F5C /* TaskRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386B31C4202B855F00A02F5C /* TaskRegister.swift */; };
+		386B31C7202B87EB00A02F5C /* TaskCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386B31C6202B87EB00A02F5C /* TaskCreateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		386B31B1202B31E900A02F5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		386B31B4202B31E900A02F5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		386B31B6202B31E900A02F5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		386B31BC202B56A200A02F5C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		386B31BE202B574D00A02F5C /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		386B31C2202B84A500A02F5C /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		386B31C4202B855F00A02F5C /* TaskRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRegister.swift; sourceTree = "<group>"; };
+		386B31C6202B87EB00A02F5C /* TaskCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCreateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,11 @@
 				386B31B1202B31E900A02F5C /* Assets.xcassets */,
 				386B31B3202B31E900A02F5C /* LaunchScreen.storyboard */,
 				386B31B6202B31E900A02F5C /* Info.plist */,
+				386B31BC202B56A200A02F5C /* TableViewController.swift */,
+				386B31BE202B574D00A02F5C /* TaskTableViewCell.swift */,
+				386B31C2202B84A500A02F5C /* DataModel.swift */,
+				386B31C4202B855F00A02F5C /* TaskRegister.swift */,
+				386B31C6202B87EB00A02F5C /* TaskCreateViewController.swift */,
 			);
 			path = nano3;
 			sourceTree = "<group>";
@@ -90,6 +105,9 @@
 		386B319F202B31E900A02F5C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					taskCell,
+				);
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Rafael Zabotini";
@@ -136,7 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				386B31C3202B84A500A02F5C /* DataModel.swift in Sources */,
+				386B31C5202B855F00A02F5C /* TaskRegister.swift in Sources */,
+				386B31BF202B574D00A02F5C /* TaskTableViewCell.swift in Sources */,
+				386B31C7202B87EB00A02F5C /* TaskCreateViewController.swift in Sources */,
 				386B31AD202B31E900A02F5C /* ViewController.swift in Sources */,
+				386B31BD202B56A200A02F5C /* TableViewController.swift in Sources */,
 				386B31AB202B31E900A02F5C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,11 +300,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D23V42T4PL;
 				INFOPLIST_FILE = nano3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ada.zabotini.nano3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -292,11 +316,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D23V42T4PL;
 				INFOPLIST_FILE = nano3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ada.zabotini.nano3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
